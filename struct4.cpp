@@ -1,0 +1,50 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct DetailAlamat //membuuat struktur detail alamat
+{
+    string desa;
+    string kota;
+};
+
+struct Mahasiswa
+{
+    string NIM;
+    string nama;
+    DetailAlamat alamat;
+    int umur;
+};
+
+int main() //membuat int main dengan metode perulangan
+{
+    Mahasiswa mhs[3];
+    for (int i = 0; i < 3; i++)
+    {
+        cout << "Data Mahasiswa ke-" << (i + 1) << ":" << endl;
+        cout << "Nomor Mahasiswa: ";
+        getline(cin, mhs[i].NIM);
+        cout << "Nama Mahasiswa: ";
+        getline(cin, mhs[i].nama);
+        cout << "Alamat Mahasiswa: " << endl;
+        cout << "\t Nama Desa: ";
+        cin >> mhs[i].alamat.desa;
+        cout << "\t Nama Kota: ";
+        cin >> mhs[i].alamat.kota;
+        cout << "Umur Mahasiswa: ";
+        cin >> mhs[i].umur;
+    }
+
+    for (int i = 0; i < 3; i++)
+    {
+    cout << endl;
+    cout << "\n Data Mahasiswa ke-" << (i + 1) << ":" << endl;
+    cout << "\n NIM : " << mhs[i].NIM;
+    cout << "\n Nama : " << mhs[i].nama;
+    cout << "\n Alamat : ";
+    cout << "\nDesa : " << mhs[i].alamat.desa;
+    cout << "\nKota : " << mhs[i].alamat.kota;
+    cout << "\n Umur : " << mhs[i].umur;
+    }
+    return 0;
+}
