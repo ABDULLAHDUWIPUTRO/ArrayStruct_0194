@@ -19,7 +19,7 @@ int main(){  //membuat int main untuk mahasiswa
     cout << "Umur Mahasiswa : ";
     cin >> mhs.umur;
 
-    cout << endl;
+    cout << endl; //membuat cout cin untuk output dan input
     cout << " \nNIM : " << mhs.NIM;
     cout << "Nama : " << mhs.nama;
     cout << "Alamat : " << mhs.alamat;
