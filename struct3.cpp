@@ -15,7 +15,7 @@ struct mahasiswa { //membuat struktur mahasiswa
     int umur;
 };
 
-int main(){
+int main(){  //membuat int main yang berisi i/o
     mahasiswa mhs;
     cout << "nomor Mahasiswa : ";
     getline(cin, mhs.NIM);
