@@ -8,7 +8,7 @@ struct DetailAlamat {  //membuat struktur detail alamat
     string kota;//city
 };
 
-struct mahasiswa {
+struct mahasiswa { //membuat struktur mahasiswa
     string NIM;
     string nama;
     DetailAlamat alamat;
