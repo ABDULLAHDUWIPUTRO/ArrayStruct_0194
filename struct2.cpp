@@ -6,14 +6,14 @@ struct DetailAlamat { //membuat struct detail alamat
     string kota;
 };
 
-struct mahasiswa {
+struct mahasiswa { //membuat struktur mahasiswa
     string NIM;
     string nama;
     DetailAlamat alamat;
     int umur;
 };
 
-int main(){
+int main(){  //membuat int main untuk  i/o
     mahasiswa mhs;
     cout << "nomor Mahasiswa : ";
     cin >> mhs.NIM;
