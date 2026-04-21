@@ -8,7 +8,7 @@ struct mahasiswa {
     int umur;
 };
 
-int main(){
+int main(){  //membuat int main untuk mahasiswa
     mahasiswa mhs;
     cout << "nomor Mahasiswa : ";
     cin >> mhs.NIM;
