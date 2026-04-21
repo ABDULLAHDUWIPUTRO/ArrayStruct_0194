@@ -47,4 +47,4 @@ int main() //membuat int main dengan metode perulangan
     cout << "\n Umur : " << mhs[i].umur;
     }
     return 0;
-}
+} //hasil akhir
